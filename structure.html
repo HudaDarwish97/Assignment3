@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+   
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>UOB Students Nationality Data</title> 
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>UOB Students Nationality Data</title>
-
+    <!-- Link to the external stylesheet for custom design -->
+    <link rel="stylesheet" href="design.css">
+    
+    <!-- Link to Pico CSS framework for responsive and minimalist design -->
+    <link rel="stylesheet" href="https://unpkg.com/picocss@latest/dist/pico.min.css">
 </head>
+
 <body>
     <main>
-
+        <!-- Main heading for the page -->
         <h1 class="container">University of Bahrain Nationality Data</h1>
 
+        <!-- Table to display UOB nationality data -->
         <table>
             <thead>
                 <tr>
+                    <!-- Table headers defining the structure of the data -->
                     <th>Year</th>
                     <th>Semester</th>
                     <th>The Programs</th>
@@ -27,12 +31,13 @@
                     <th>Number of Students</th>
                 </tr>
             </thead> 
-            <tbody id="table-body"></tbody>
-            </table>
-            </main>
-            <script src="API.js">
+            <tbody id="table-body">
+                <!-- Dynamic content will be added here via JavaScript -->
+            </tbody>
+        </table>
+    </main>
 
-            </script>
-
+    <!-- Link to the JavaScript file responsible for fetching and displaying the data -->
+    <script src="API.js"></script>
 </body>
 </html>
